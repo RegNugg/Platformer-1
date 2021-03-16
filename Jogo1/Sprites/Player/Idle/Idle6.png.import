@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Take Hit - white silhouette.png-290b08b9f77dc77819abfff94d712b76.stex"
+path="res://.import/Idle6.png-8f5beb872a2eb34a67def660146fb498.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Take Hit white/Take Hit - white silhouette.png"
-dest_files=[ "res://.import/Take Hit - white silhouette.png-290b08b9f77dc77819abfff94d712b76.stex" ]
+source_file="res://Sprites/Player/Idle/Idle6.png"
+dest_files=[ "res://.import/Idle6.png-8f5beb872a2eb34a67def660146fb498.stex" ]
 
 [params]
 

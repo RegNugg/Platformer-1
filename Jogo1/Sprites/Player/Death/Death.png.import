@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle8.png-8b7a670cb473f8b96915975569eadd04.stex"
+path="res://.import/Death.png-d946a575aa0d8aeb045c4a85b7056325.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Idle/Idle8.png"
-dest_files=[ "res://.import/Idle8.png-8b7a670cb473f8b96915975569eadd04.stex" ]
+source_file="res://Sprites/Player/Death/Death.png"
+dest_files=[ "res://.import/Death.png-d946a575aa0d8aeb045c4a85b7056325.stex" ]
 
 [params]
 

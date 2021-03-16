@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Death.png-ab3515f96f8c95d846546ff8baaae1bf.stex"
+path="res://.import/Take Hit - white silhouette.png-cefdabf49f499fe299269b2ce264ba80.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Death/Death.png"
-dest_files=[ "res://.import/Death.png-ab3515f96f8c95d846546ff8baaae1bf.stex" ]
+source_file="res://Sprites/Player/Take Hit white/Take Hit - white silhouette.png"
+dest_files=[ "res://.import/Take Hit - white silhouette.png-cefdabf49f499fe299269b2ce264ba80.stex" ]
 
 [params]
 

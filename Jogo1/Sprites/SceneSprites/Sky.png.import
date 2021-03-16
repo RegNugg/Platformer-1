@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle4.png-cedbbce66a48447de7ec16eab8452356.stex"
+path="res://.import/Sky.png-ade75a963c5cf728d87731cff7564a26.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Idle/Idle4.png"
-dest_files=[ "res://.import/Idle4.png-cedbbce66a48447de7ec16eab8452356.stex" ]
+source_file="res://Sprites/SceneSprites/Sky.png"
+dest_files=[ "res://.import/Sky.png-ade75a963c5cf728d87731cff7564a26.stex" ]
 
 [params]
 

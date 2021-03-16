@@ -1,13 +1,40 @@
 extends KinematicBody2D
-const velocitat = 500
-var mov = Vector2()
-var gravetat = 90
+
+#Horitzontal
+const velocitat = 200
+var mov = Vector2(0,0)
+#Vertical
+var gravetat = 750
+var jump_power = -350
+
 func _physics_process(delta):
+	
 	mov.y += gravetat * delta
 	mov.x = 0
-	if Input.is_action_pressed("Left"):
-		mov.x = -velocitat
+	
+	#Moviment esquerra-dreta
+	
+		
 	if Input.is_action_pressed("Right"):
 		mov.x = velocitat
-	mov = mov.normalized() * velocitat
-	move_and_slide(mov)
+		$Player.play("Run")
+		$Player.flip_h = false
+	elif Input.is_action_pressed("Left"):
+		mov.x = -velocitat
+		$Player.play("Run")
+		$Player.flip_h = true
+	else:
+		$Player.play("Idle")
+	
+	#Moviment salt-caiguda
+		
+	if Input.is_action_just_pressed("Jump") and is_on_floor():
+		mov.y = jump_power
+	if mov.y < 0:
+		$Player.play("Jump")
+	if mov.y > 0 and is_on_floor() != true:
+		$Player.play("Fall")
+	
+	
+	mov = move_and_slide(mov, Vector2.UP)
+	mov.x = lerp(mov.x, 0, 0.2)
