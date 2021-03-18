@@ -35,6 +35,9 @@ func _physics_process(delta):
 	if mov.y > 0 and is_on_floor() != true:
 		$Player.play("Fall")
 	
-	
+	#Atac
+	if Input.is_action_pressed("E") and is_on_floor():
+		$Player.play("Attack1")
+		
 	mov = move_and_slide(mov, Vector2.UP)
 	mov.x = lerp(mov.x, 0, 0.2)
