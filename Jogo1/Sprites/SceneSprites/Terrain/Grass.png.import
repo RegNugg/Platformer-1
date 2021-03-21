@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ground.png-c345c35ba5f8334c514ffdd095dc4c9d.stex"
+path="res://.import/Grass.png-2e552e08faf709f3b145d8cfbfc3835a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/SceneSprites/Ground.png"
-dest_files=[ "res://.import/Ground.png-c345c35ba5f8334c514ffdd095dc4c9d.stex" ]
+source_file="res://Sprites/SceneSprites/Terrain/Grass.png"
+dest_files=[ "res://.import/Grass.png-2e552e08faf709f3b145d8cfbfc3835a.stex" ]
 
 [params]
 
