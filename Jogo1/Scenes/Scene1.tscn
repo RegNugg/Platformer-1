@@ -1,26 +1,9 @@
-[gd_scene load_steps=109 format=2]
+[gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://Sprites/Player/Idle/Idle1.png" type="Texture" id=1]
-[ext_resource path="res://Sprites/Player/Idle/Idle2.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Player/Idle/Idle3.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Player/Idle/Idle4.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Player/Idle/Idle5.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Player/Idle/Idle6.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/Player/Idle/Idle8.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/Player/Idle/Idle7.png" type="Texture" id=8]
-[ext_resource path="res://Scenes/Player.gd" type="Script" id=9]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Skeleton.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Sprites/SceneSprites/Terrain/tileset2.png" type="Texture" id=10]
 [ext_resource path="res://Sprites/SceneSprites/Sky/far-grounds.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/Player/Run/Run.png" type="Texture" id=12]
-[ext_resource path="res://Sprites/Player/Jump/Jump.png" type="Texture" id=13]
-[ext_resource path="res://Sprites/Player/Fall/Fall.png" type="Texture" id=14]
-[ext_resource path="res://Sprites/Skeleton/Skeleton Idle.png" type="Texture" id=15]
-[ext_resource path="res://Scenes/Skeleton.gd" type="Script" id=16]
-[ext_resource path="res://Sprites/Skeleton/Skeleton React.png" type="Texture" id=17]
-[ext_resource path="res://Sprites/Skeleton/Skeleton Attack.png" type="Texture" id=18]
-[ext_resource path="res://Sprites/Player/Attack1/Attack1.png" type="Texture" id=19]
-[ext_resource path="res://Sprites/Skeleton/Skeleton Dead.png" type="Texture" id=20]
-[ext_resource path="res://Sprites/Skeleton/Skeleton Hit.png" type="Texture" id=21]
 [ext_resource path="res://Sprites/SceneSprites/Sky/clouds.png" type="Texture" id=22]
 [ext_resource path="res://Sprites/SceneSprites/Sky/sky.png" type="Texture" id=23]
 [ext_resource path="res://Sprites/SceneSprites/Background/sea.png" type="Texture" id=24]
@@ -28,441 +11,6 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 5.702, 353.736 )
-
-[sub_resource type="AtlasTexture" id=2]
-flags = 4
-atlas = ExtResource( 19 )
-region = Rect2( 0, 0, 200, 200 )
-
-[sub_resource type="AtlasTexture" id=3]
-flags = 4
-atlas = ExtResource( 19 )
-region = Rect2( 200, 0, 200, 200 )
-
-[sub_resource type="AtlasTexture" id=4]
-flags = 4
-atlas = ExtResource( 19 )
-region = Rect2( 400, 0, 200, 200 )
-
-[sub_resource type="AtlasTexture" id=5]
-flags = 4
-atlas = ExtResource( 19 )
-region = Rect2( 600, 0, 200, 200 )
-
-[sub_resource type="AtlasTexture" id=6]
-flags = 4
-atlas = ExtResource( 19 )
-region = Rect2( 800, 0, 200, 200 )
-
-[sub_resource type="AtlasTexture" id=7]
-flags = 4
-atlas = ExtResource( 19 )
-region = Rect2( 1000, 0, 200, 200 )
-
-[sub_resource type="AtlasTexture" id=8]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 0, 66, 200, 66 )
-
-[sub_resource type="AtlasTexture" id=9]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 200, 66, 200, 66 )
-
-[sub_resource type="AtlasTexture" id=10]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 400, 66, 200, 66 )
-
-[sub_resource type="AtlasTexture" id=11]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 600, 66, 200, 66 )
-
-[sub_resource type="AtlasTexture" id=12]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 800, 66, 200, 66 )
-
-[sub_resource type="AtlasTexture" id=13]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 1000, 66, 200, 66 )
-
-[sub_resource type="AtlasTexture" id=14]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 1200, 66, 200, 66 )
-
-[sub_resource type="AtlasTexture" id=15]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 1400, 66, 200, 66 )
-
-[sub_resource type="AtlasTexture" id=16]
-flags = 4
-atlas = ExtResource( 14 )
-region = Rect2( 0, 66, 200, 66 )
-
-[sub_resource type="AtlasTexture" id=17]
-flags = 4
-atlas = ExtResource( 14 )
-region = Rect2( 200, 66, 200, 66 )
-
-[sub_resource type="AtlasTexture" id=18]
-flags = 4
-atlas = ExtResource( 13 )
-region = Rect2( 0, 66, 200, 66 )
-
-[sub_resource type="AtlasTexture" id=19]
-flags = 4
-atlas = ExtResource( 13 )
-region = Rect2( 200, 66, 200, 66 )
-
-[sub_resource type="SpriteFrames" id=20]
-animations = [ {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
-"loop": false,
-"name": "Attack1",
-"speed": 12.0
-}, {
-"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 8.0
-}, {
-"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ) ],
-"loop": true,
-"name": "Run",
-"speed": 8.0
-}, {
-"frames": [ SubResource( 16 ), SubResource( 17 ) ],
-"loop": true,
-"name": "Fall",
-"speed": 2.0
-}, {
-"frames": [ SubResource( 18 ), SubResource( 19 ) ],
-"loop": true,
-"name": "Jump",
-"speed": 2.0
-} ]
-
-[sub_resource type="RectangleShape2D" id=21]
-extents = Vector2( 20.9603, 12.6126 )
-
-[sub_resource type="RectangleShape2D" id=22]
-extents = Vector2( 21.0941, 12.7785 )
-
-[sub_resource type="RectangleShape2D" id=23]
-extents = Vector2( 11.9741, 21.5773 )
-
-[sub_resource type="AtlasTexture" id=24]
-flags = 4
-atlas = ExtResource( 21 )
-region = Rect2( 0, 0, 30, 32 )
-
-[sub_resource type="AtlasTexture" id=25]
-flags = 4
-atlas = ExtResource( 21 )
-region = Rect2( 30, 0, 30, 32 )
-
-[sub_resource type="AtlasTexture" id=26]
-flags = 4
-atlas = ExtResource( 21 )
-region = Rect2( 60, 0, 30, 32 )
-
-[sub_resource type="AtlasTexture" id=27]
-flags = 4
-atlas = ExtResource( 21 )
-region = Rect2( 90, 0, 30, 32 )
-
-[sub_resource type="AtlasTexture" id=28]
-flags = 4
-atlas = ExtResource( 21 )
-region = Rect2( 120, 0, 30, 32 )
-
-[sub_resource type="AtlasTexture" id=29]
-flags = 4
-atlas = ExtResource( 21 )
-region = Rect2( 150, 0, 30, 32 )
-
-[sub_resource type="AtlasTexture" id=30]
-flags = 4
-atlas = ExtResource( 21 )
-region = Rect2( 180, 0, 30, 32 )
-
-[sub_resource type="AtlasTexture" id=31]
-flags = 4
-atlas = ExtResource( 21 )
-region = Rect2( 210, 0, 30, 32 )
-
-[sub_resource type="AtlasTexture" id=32]
-flags = 4
-atlas = ExtResource( 15 )
-region = Rect2( 0, 0, 24, 32 )
-
-[sub_resource type="AtlasTexture" id=33]
-flags = 4
-atlas = ExtResource( 15 )
-region = Rect2( 24, 0, 24, 32 )
-
-[sub_resource type="AtlasTexture" id=34]
-flags = 4
-atlas = ExtResource( 15 )
-region = Rect2( 48, 0, 24, 32 )
-
-[sub_resource type="AtlasTexture" id=35]
-flags = 4
-atlas = ExtResource( 15 )
-region = Rect2( 72, 0, 24, 32 )
-
-[sub_resource type="AtlasTexture" id=36]
-flags = 4
-atlas = ExtResource( 15 )
-region = Rect2( 96, 0, 24, 32 )
-
-[sub_resource type="AtlasTexture" id=37]
-flags = 4
-atlas = ExtResource( 15 )
-region = Rect2( 120, 0, 24, 32 )
-
-[sub_resource type="AtlasTexture" id=38]
-flags = 4
-atlas = ExtResource( 15 )
-region = Rect2( 144, 0, 24, 32 )
-
-[sub_resource type="AtlasTexture" id=39]
-flags = 4
-atlas = ExtResource( 15 )
-region = Rect2( 168, 0, 24, 32 )
-
-[sub_resource type="AtlasTexture" id=40]
-flags = 4
-atlas = ExtResource( 15 )
-region = Rect2( 192, 0, 24, 32 )
-
-[sub_resource type="AtlasTexture" id=41]
-flags = 4
-atlas = ExtResource( 15 )
-region = Rect2( 216, 0, 24, 32 )
-
-[sub_resource type="AtlasTexture" id=42]
-flags = 4
-atlas = ExtResource( 15 )
-region = Rect2( 240, 0, 24, 32 )
-
-[sub_resource type="AtlasTexture" id=43]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 0, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=44]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 33, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=45]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 66, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=46]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 99, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=47]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 132, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=48]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 165, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=49]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 198, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=50]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 231, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=51]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 264, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=52]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 297, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=53]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 330, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=54]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 363, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=55]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 396, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=56]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 429, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=57]
-flags = 4
-atlas = ExtResource( 20 )
-region = Rect2( 462, 0, 33, 32 )
-
-[sub_resource type="AtlasTexture" id=58]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 0, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=59]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 43, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=60]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 86, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=61]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 129, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=62]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 172, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=63]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 215, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=64]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 258, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=65]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 301, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=66]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 344, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=67]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 387, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=68]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 430, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=69]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 473, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=70]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 516, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=71]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 559, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=72]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 602, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=73]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 645, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=74]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 688, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=75]
-flags = 4
-atlas = ExtResource( 18 )
-region = Rect2( 731, 0, 43, 37 )
-
-[sub_resource type="AtlasTexture" id=76]
-flags = 4
-atlas = ExtResource( 17 )
-region = Rect2( 0, 0, 22, 32 )
-
-[sub_resource type="AtlasTexture" id=77]
-flags = 4
-atlas = ExtResource( 17 )
-region = Rect2( 22, 0, 22, 32 )
-
-[sub_resource type="AtlasTexture" id=78]
-flags = 4
-atlas = ExtResource( 17 )
-region = Rect2( 44, 0, 22, 32 )
-
-[sub_resource type="AtlasTexture" id=79]
-flags = 4
-atlas = ExtResource( 17 )
-region = Rect2( 66, 0, 22, 32 )
-
-[sub_resource type="SpriteFrames" id=80]
-animations = [ {
-"frames": [ SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ) ],
-"loop": false,
-"name": "Hit",
-"speed": 8.0
-}, {
-"frames": [ SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 11.0
-}, {
-"frames": [ SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ) ],
-"loop": true,
-"name": "Dead",
-"speed": 15.0
-}, {
-"frames": [ SubResource( 58 ), SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ), SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ), SubResource( 68 ), SubResource( 69 ), SubResource( 70 ), SubResource( 71 ), SubResource( 72 ), SubResource( 73 ), SubResource( 74 ), SubResource( 75 ) ],
-"loop": false,
-"name": "Attack",
-"speed": 18.0
-}, {
-"frames": [ SubResource( 76 ), SubResource( 77 ), SubResource( 78 ), SubResource( 79 ) ],
-"loop": false,
-"name": "React",
-"speed": 4.0
-} ]
 
 [sub_resource type="ConvexPolygonShape2D" id=81]
 points = PoolVector2Array( 16, 32, 0, 32, 0, 16, 16, 16 )
@@ -517,54 +65,51 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 [node name="Node2D" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-scroll_ignore_camera_zoom = true
-
-[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.1, 0 )
-
-[node name="sky" type="Sprite" parent="ParallaxBackground/Sky"]
-position = Vector2( -1706.39, 56.3439 )
-texture = ExtResource( 23 )
-centered = false
-region_enabled = true
-region_rect = Rect2( -2903.91, 0, 5000, 304 )
 
 [node name="Upsky" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.25, 0 )
+motion_scale = Vector2( 0.1, 1 )
 
-[node name="UpSky" type="Sprite" parent="ParallaxBackground/Upsky"]
-position = Vector2( -1706.94, -301.9 )
+[node name="Upsky" type="Sprite" parent="ParallaxBackground/Upsky"]
+position = Vector2( 0, 173 )
 texture = ExtResource( 25 )
-centered = false
 region_enabled = true
-region_rect = Rect2( -3155.56, -17, 5000, 413.261 )
+region_rect = Rect2( 0, 0, 21660, 236 )
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.1, 1 )
+
+[node name="Sky" type="Sprite" parent="ParallaxBackground/Sky"]
+position = Vector2( 0, 405 )
+texture = ExtResource( 23 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 21660, 236 )
 
 [node name="Sea" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.5, 0 )
+motion_scale = Vector2( 0.1, 1 )
 
-[node name="sea" type="Sprite" parent="ParallaxBackground/Sea"]
-position = Vector2( -1706.74, 359.134 )
+[node name="Sea" type="Sprite" parent="ParallaxBackground/Sea"]
+position = Vector2( 0, 701 )
 texture = ExtResource( 24 )
-centered = false
 region_enabled = true
-region_rect = Rect2( -2672.23, 0, 5000, 150 )
+region_rect = Rect2( 0, 0, 21660, 236 )
 
 [node name="Clouds" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.75, 0 )
+motion_scale = Vector2( 0.5, 1 )
 
-[node name="clouds" type="Sprite" parent="ParallaxBackground/Clouds"]
-position = Vector2( -1706.53, 172.236 )
+[node name="Clouds" type="Sprite" parent="ParallaxBackground/Clouds"]
+position = Vector2( 0, 485 )
 texture = ExtResource( 22 )
-centered = false
 region_enabled = true
-region_rect = Rect2( -3155.56, 0, 5000, 235 )
+region_rect = Rect2( 0, 0, 21660, 236 )
 
-[node name="Far-Grounds" type="ParallaxLayer" parent="ParallaxBackground"]
+[node name="Terra" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.75, 1 )
 
-[node name="far-grounds" type="Sprite" parent="ParallaxBackground/Far-Grounds"]
-position = Vector2( 852.11, 347.905 )
+[node name="Terra" type="Sprite" parent="ParallaxBackground/Terra"]
+position = Vector2( 0, 485 )
 texture = ExtResource( 11 )
-centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 616, 110 )
 
 [node name="Start Wall" type="StaticBody2D" parent="."]
 
@@ -572,73 +117,9 @@ centered = false
 position = Vector2( -352.614, 205.202 )
 shape = SubResource( 1 )
 
-[node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( -207.546, 471.514 )
-collision_layer = 2
-collision_mask = 3
-script = ExtResource( 9 )
+[node name="Player" parent="." instance=ExtResource( 1 )]
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2( 33.936, 11.3393 )
-offset = Vector2( 0, -65 )
-current = true
-zoom = Vector2( 0.5, 0.5 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player"]
-position = Vector2( -428.064, -163.661 )
-polygon = PoolVector2Array( 454.688, 199.63, 481.597, 199.63, 480.478, 161.207, 465.987, 147.733, 461.205, 146.654, 457, 147.705, 445.381, 163.114, 445.228, 173.983, 446.069, 191.852, 445.648, 199.841 )
-
-[node name="Player" type="AnimatedSprite" parent="Player"]
-position = Vector2( 33.936, 11.3393 )
-frames = SubResource( 20 )
-animation = "Idle"
-frame = 2
-playing = true
-
-[node name="AttackArea" type="Area2D" parent="Player" groups=[
-"Sword",
-]]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/AttackArea"]
-position = Vector2( 84.7525, 9.92242 )
-shape = SubResource( 21 )
-disabled = true
-
-[node name="AttackArea2" type="Area2D" parent="Player" groups=[
-"Sword",
-]]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/AttackArea2"]
-position = Vector2( -15.1453, 10.468 )
-shape = SubResource( 22 )
-disabled = true
-
-[node name="Skeleton" type="KinematicBody2D" parent="."]
-position = Vector2( 5.33936, 138.067 )
-collision_layer = 2
-collision_mask = 3
-script = ExtResource( 16 )
-
-[node name="Hitbox" type="Area2D" parent="Skeleton"]
-position = Vector2( 0, 8 )
-collision_mask = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Skeleton/Hitbox"]
-position = Vector2( 833.552, 345.246 )
-shape = SubResource( 23 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Skeleton"]
-position = Vector2( 0, 8 )
-polygon = PoolVector2Array( 836.711, 367.293, 823.167, 367.923, 820.962, 363.513, 825.057, 358.474, 816.867, 353.749, 818.442, 343.355, 824.112, 339.26, 825.057, 326.661, 837.341, 326.346, 843.326, 333.59, 843.326, 343.04, 841.751, 365.403 )
-
-[node name="Skeleton" type="AnimatedSprite" parent="Skeleton"]
-position = Vector2( 825.664, 350.429 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 80 )
-animation = "Idle"
-frame = 4
-playing = true
-flip_h = true
+[node name="Skeleton" parent="." instance=ExtResource( 2 )]
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2( 2550.44, 496 )
@@ -647,6 +128,3 @@ tile_set = SubResource( 83 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 130853, 0, 0, 130854, 0, 0, 130855, 0, 0, 130856, 0, 0, 130857, 0, 0, 130858, 0, 0, 130859, 0, 0, 130860, 0, 0, 130861, 0, 0, 130862, 0, 0, 130863, 0, 0, 130864, 0, 0, 130865, 0, 0, 130866, 0, 0, 130867, 0, 0, 130868, 0, 0, 130869, 0, 0, 130870, 0, 0, 130871, 0, 0, 130872, 0, 0, 130873, 0, 0, 130874, 0, 0, 130875, 0, 0, 130876, 0, 0, 130877, 0, 0, 130878, 0, 0, 130879, 0, 0, 130880, 0, 0, 130881, 0, 0, 130882, 0, 0, 130883, 0, 0, 130884, 0, 0, 130885, 0, 0, 130886, 0, 0, 130887, 0, 0, 130888, 0, 0, 130889, 0, 0, 130890, 0, 0, 130891, 0, 0, 130892, 0, 0, 130893, 0, 0, 130894, 0, 0, 130895, 0, 0, 130896, 0, 0, 130897, 0, 0, 130898, 0, 0, 130899, 0, 0, 130900, 0, 0, 130901, 0, 0, 130902, 0, 0, 130903, 0, 0, 130904, 0, 0, 130905, 0, 0, 130906, 0, 0, 130907, 0, 0, 130908, 0, 0, 130909, 0, 0, 130910, 0, 0, 130911, 0, 0, 130912, 0, 0, 130913, 0, 0, 130914, 0, 0, 130915, 0, 0, 130916, 0, 0, 130917, 0, 0, 130918, 0, 0, 130919, 0, 0, 130920, 0, 0, 130921, 0, 0, 130922, 0, 0, 130923, 0, 0, 130924, 0, 0, 130925, 0, 0, 130926, 0, 0, 130927, 0, 0, 130928, 0, 0, 130929, 0, 0, 130930, 0, 0, 130931, 0, 0, 130932, 0, 0, 130933, 0, 0, 130934, 0, 0, 130935, 0, 0, 130936, 0, 0, 130937, 0, 0, 130938, 0, 0, 130939, 0, 0, 130940, 0, 0, 130941, 0, 0, 130942, 0, 0, 130943, 0, 0, 130944, 0, 0, 130945, 0, 0, 130946, 0, 0, 130947, 0, 0, 130948, 0, 0, 130949, 0, 0, 130950, 0, 0, 130951, 0, 0, 130952, 0, 0, 130953, 0, 0, 130954, 0, 0, 130955, 0, 0, 130956, 0, 0, 130957, 0, 0, 130958, 0, 0, 130959, 0, 0, 130960, 0, 0, 130961, 0, 0, 130962, 0, 0, 130963, 0, 0, 130964, 0, 0, 130965, 0, 0, 130966, 0, 0, 130967, 0, 0, 130968, 0, 0, 130969, 0, 0, 130970, 0, 0, 130971, 0, 0, 130972, 0, 0, 130973, 0, 0, 130974, 0, 0, 130975, 0, 0, 130976, 0, 0, 130977, 0, 0, 130978, 0, 0, 130979, 0, 0, 130980, 0, 0, 130981, 0, 0, 130982, 0, 0, 130983, 0, 0, 130984, 0, 0, 130985, 0, 0, 130986, 0, 0, 130987, 0, 0, 130988, 0, 0, 130989, 0, 0, 130990, 0, 0, 130991, 0, 0, 130992, 0, 0, 130993, 0, 0, 130994, 0, 0, 130995, 0, 0, 130996, 0, 0, 130997, 0, 0, 130998, 0, 0, 130999, 0, 0, 131000, 0, 0, 131001, 0, 0, 261925, 1, 0, 261926, 1, 0, 261927, 1, 0, 261928, 1, 0, 261929, 1, 0, 261930, 1, 0, 261931, 1, 0, 261932, 1, 0, 261933, 1, 0, 261934, 1, 0, 261935, 1, 0, 261936, 1, 0, 261937, 1, 0, 261938, 1, 0, 261939, 1, 0, 261940, 1, 0, 261941, 1, 0, 261942, 1, 0, 261943, 1, 0, 261944, 1, 0, 261945, 1, 0, 261946, 1, 0, 261947, 1, 0, 261948, 1, 0, 261949, 1, 0, 261950, 1, 0, 261951, 1, 0, 261952, 1, 0, 261953, 1, 0, 261954, 1, 0, 261955, 1, 0, 261956, 1, 0, 261957, 1, 0, 261958, 1, 0, 261959, 1, 0, 261960, 1, 0, 261961, 1, 0, 261962, 1, 0, 261963, 1, 0, 261964, 1, 0, 261965, 1, 0, 261966, 1, 0, 261967, 1, 0, 261968, 1, 0, 261969, 1, 0, 261970, 1, 0, 261971, 1, 0, 261972, 1, 0, 261973, 1, 0, 261974, 1, 0, 261975, 1, 0, 261976, 1, 0, 261977, 1, 0, 261978, 1, 0, 261979, 1, 0, 261980, 1, 0, 261981, 1, 0, 261982, 1, 0, 261983, 1, 0, 261984, 1, 0, 261985, 1, 0, 261986, 1, 0, 261987, 1, 0, 261988, 1, 0, 261989, 1, 0, 261990, 1, 0, 261991, 1, 0, 261992, 1, 0, 261993, 1, 0, 261994, 1, 0, 261995, 1, 0, 261996, 1, 0, 261997, 1, 0, 261998, 1, 0, 261999, 1, 0, 262000, 1, 0, 262001, 1, 0, 262002, 1, 0, 262003, 1, 0, 262004, 1, 0, 262005, 1, 0, 262006, 1, 0, 262007, 1, 0, 262008, 1, 0, 262009, 1, 0, 262010, 1, 0, 262011, 1, 0, 262012, 1, 0, 262013, 1, 0, 262014, 1, 0, 262015, 1, 0, 262016, 1, 0, 262017, 1, 0, 262018, 1, 0, 262019, 1, 0, 262020, 1, 0, 262021, 1, 0, 262022, 1, 0, 262023, 1, 0, 262024, 1, 0, 262025, 1, 0, 262026, 1, 0, 262027, 1, 0, 262028, 1, 0, 262029, 1, 0, 262030, 1, 0, 262031, 1, 0, 262032, 1, 0, 262033, 1, 0, 262034, 1, 0, 262035, 1, 0, 262036, 1, 0, 262037, 1, 0, 262038, 1, 0, 262039, 1, 0, 262040, 1, 0, 262041, 1, 0, 262042, 1, 0, 262043, 1, 0, 262044, 1, 0, 262045, 1, 0, 262046, 1, 0, 262047, 1, 0, 262048, 1, 0, 262049, 1, 0, 262050, 1, 0, 262051, 1, 0, 262052, 1, 0, 262053, 1, 0, 262054, 1, 0, 262055, 1, 0, 262056, 1, 0, 262057, 1, 0, 262058, 1, 0, 262059, 1, 0, 262060, 1, 0, 262061, 1, 0, 262062, 1, 0, 262063, 1, 0, 262064, 1, 0, 262065, 1, 0, 262066, 1, 0, 262067, 1, 0, 262068, 1, 0, 262069, 1, 0, 262070, 1, 0, 262071, 1, 0, 262072, 1, 0, 262073, 1, 0, 327461, 1, 0, 327462, 1, 0, 327463, 1, 0, 327464, 1, 0, 327465, 1, 0, 327466, 1, 0, 327467, 1, 0, 327468, 1, 0, 327469, 1, 0, 327470, 1, 0, 327471, 1, 0, 327472, 1, 0, 327473, 1, 0, 327474, 1, 0, 327475, 1, 0, 327476, 1, 0, 327477, 1, 0, 327478, 1, 0, 327479, 1, 0, 327480, 1, 0, 327481, 1, 0, 327482, 1, 0, 327483, 1, 0, 327484, 1, 0, 327485, 1, 0, 327486, 1, 0, 327487, 1, 0, 327488, 1, 0, 327489, 1, 0, 327490, 1, 0, 327491, 1, 0, 327492, 1, 0, 327493, 1, 0, 327494, 1, 0, 327495, 1, 0, 327496, 1, 0, 327497, 1, 0, 327498, 1, 0, 327499, 1, 0, 327500, 1, 0, 327501, 1, 0, 327502, 1, 0, 327503, 1, 0, 327504, 1, 0, 327505, 1, 0, 327506, 1, 0, 327507, 1, 0, 327508, 1, 0, 327509, 1, 0, 327510, 1, 0, 327511, 1, 0, 327512, 1, 0, 327513, 1, 0, 327514, 1, 0, 327515, 1, 0, 327516, 1, 0, 327517, 1, 0, 327518, 1, 0, 327519, 1, 0, 327520, 1, 0, 327521, 1, 0, 327522, 1, 0, 327523, 1, 0, 327524, 1, 0, 327525, 1, 0, 327526, 1, 0, 327527, 1, 0, 327528, 1, 0, 327529, 1, 0, 327530, 1, 0, 327531, 1, 0, 327532, 1, 0, 327533, 1, 0, 327534, 1, 0, 327535, 1, 0, 327536, 1, 0, 327537, 1, 0, 327538, 1, 0, 327539, 1, 0, 327540, 1, 0, 327541, 1, 0, 327542, 1, 0, 327543, 1, 0, 327544, 1, 0, 327545, 1, 0, 327546, 1, 0, 327547, 1, 0, 327548, 1, 0, 327549, 1, 0, 327550, 1, 0, 327551, 1, 0, 327552, 1, 0, 327553, 1, 0, 327554, 1, 0, 327555, 1, 0, 327556, 1, 0, 327557, 1, 0, 327558, 1, 0, 327559, 1, 0, 327560, 1, 0, 327561, 1, 0, 327562, 1, 0, 327563, 1, 0, 327564, 1, 0, 327565, 1, 0, 327566, 1, 0, 327567, 1, 0, 327568, 1, 0, 327569, 1, 0, 327570, 1, 0, 327571, 1, 0, 327572, 1, 0, 327573, 1, 0, 327574, 1, 0, 327575, 1, 0, 327576, 1, 0, 327577, 1, 0, 327578, 1, 0, 327579, 1, 0, 327580, 1, 0, 327581, 1, 0, 327582, 1, 0, 327583, 1, 0, 327584, 1, 0, 327585, 1, 0, 327586, 1, 0, 327587, 1, 0, 327588, 1, 0, 327589, 1, 0, 327590, 1, 0, 327591, 1, 0, 327592, 1, 0, 327593, 1, 0, 327594, 1, 0, 327595, 1, 0, 327596, 1, 0, 327597, 1, 0, 327598, 1, 0, 327599, 1, 0, 327600, 1, 0, 327601, 1, 0, 327602, 1, 0, 327603, 1, 0, 327604, 1, 0, 327605, 1, 0, 327606, 1, 0, 327607, 1, 0, 327608, 1, 0, 327609, 1, 0, 392997, 1, 0, 392998, 1, 0, 392999, 1, 0, 393000, 1, 0, 393001, 1, 0, 393002, 1, 0, 393003, 1, 0, 393004, 1, 0, 393005, 1, 0, 393006, 1, 0, 393007, 1, 0, 393008, 1, 0, 393009, 1, 0, 393010, 1, 0, 393011, 1, 0, 393012, 1, 0, 393013, 1, 0, 393014, 1, 0, 393015, 1, 0, 393016, 1, 0, 393017, 1, 0, 393018, 1, 0, 393019, 1, 0, 393020, 1, 0, 393021, 1, 0, 393022, 1, 0, 393023, 1, 0, 393024, 1, 0, 393025, 1, 0, 393026, 1, 0, 393027, 1, 0, 393028, 1, 0, 393029, 1, 0, 393030, 1, 0, 393031, 1, 0, 393032, 1, 0, 393033, 1, 0, 393034, 1, 0, 393035, 1, 0, 393036, 1, 0, 393037, 1, 0, 393038, 1, 0, 393039, 1, 0, 393040, 1, 0, 393041, 1, 0, 393042, 1, 0, 393043, 1, 0, 393044, 1, 0, 393045, 1, 0, 393046, 1, 0, 393047, 1, 0, 393048, 1, 0, 393049, 1, 0, 393050, 1, 0, 393051, 1, 0, 393052, 1, 0, 393053, 1, 0, 393054, 1, 0, 393055, 1, 0, 393056, 1, 0, 393057, 1, 0, 393058, 1, 0, 393059, 1, 0, 393060, 1, 0, 393061, 1, 0, 393062, 1, 0, 393063, 1, 0, 393064, 1, 0, 393065, 1, 0, 393066, 1, 0, 393067, 1, 0, 393068, 1, 0, 393069, 1, 0, 393070, 1, 0, 393071, 1, 0, 393072, 1, 0, 393073, 1, 0, 393074, 1, 0, 393075, 1, 0, 393076, 1, 0, 393077, 1, 0, 393078, 1, 0, 393079, 1, 0, 393080, 1, 0, 393081, 1, 0, 393082, 1, 0, 393083, 1, 0, 393084, 1, 0, 393085, 1, 0, 393086, 1, 0, 393087, 1, 0, 393088, 1, 0, 393089, 1, 0, 393090, 1, 0, 393091, 1, 0, 393092, 1, 0, 393093, 1, 0, 393094, 1, 0, 393095, 1, 0, 393096, 1, 0, 393097, 1, 0, 393098, 1, 0, 393099, 1, 0, 393100, 1, 0, 393101, 1, 0, 393102, 1, 0, 393103, 1, 0, 393104, 1, 0, 393105, 1, 0, 393106, 1, 0, 393107, 1, 0, 393108, 1, 0, 393109, 1, 0, 393110, 1, 0, 393111, 1, 0, 393112, 1, 0, 393113, 1, 0, 393114, 1, 0, 393115, 1, 0, 393116, 1, 0, 393117, 1, 0, 393118, 1, 0, 393119, 1, 0, 393120, 1, 0, 393121, 1, 0, 393122, 1, 0, 393123, 1, 0, 393124, 1, 0, 393125, 1, 0, 393126, 1, 0, 393127, 1, 0, 393128, 1, 0, 393129, 1, 0, 393130, 1, 0, 393131, 1, 0, 393132, 1, 0, 393133, 1, 0, 393134, 1, 0, 393135, 1, 0, 393136, 1, 0, 393137, 1, 0, 393138, 1, 0, 393139, 1, 0, 393140, 1, 0, 393141, 1, 0, 393142, 1, 0, 393143, 1, 0, 393144, 1, 0, 393145, 1, 0, 458533, 1, 0, 458534, 1, 0, 458535, 1, 0, 458536, 1, 0, 458537, 1, 0, 458538, 1, 0, 458539, 1, 0, 458540, 1, 0, 458541, 1, 0, 458542, 1, 0, 458543, 1, 0, 458544, 1, 0, 458545, 1, 0, 458546, 1, 0, 458547, 1, 0, 458548, 1, 0, 458549, 1, 0, 458550, 1, 0, 458551, 1, 0, 458552, 1, 0, 458553, 1, 0, 458554, 1, 0, 458555, 1, 0, 458556, 1, 0, 458557, 1, 0, 458558, 1, 0, 458559, 1, 0, 458560, 1, 0, 458561, 1, 0, 458562, 1, 0, 458563, 1, 0, 458564, 1, 0, 458565, 1, 0, 458566, 1, 0, 458567, 1, 0, 458568, 1, 0, 458569, 1, 0, 458570, 1, 0, 458571, 1, 0, 458572, 1, 0, 458573, 1, 0, 458574, 1, 0, 458575, 1, 0, 458576, 1, 0, 458577, 1, 0, 458578, 1, 0, 458579, 1, 0, 458580, 1, 0, 458581, 1, 0, 458582, 1, 0, 458583, 1, 0, 458584, 1, 0, 458585, 1, 0, 458586, 1, 0, 458587, 1, 0, 458588, 1, 0, 458589, 1, 0, 458590, 1, 0, 458591, 1, 0, 458592, 1, 0, 458593, 1, 0, 458594, 1, 0, 458595, 1, 0, 458596, 1, 0, 458597, 1, 0, 458598, 1, 0, 458599, 1, 0, 458600, 1, 0, 458601, 1, 0, 458602, 1, 0, 458603, 1, 0, 458604, 1, 0, 458605, 1, 0, 458606, 1, 0, 458607, 1, 0, 458608, 1, 0, 458609, 1, 0, 458610, 1, 0, 458611, 1, 0, 458612, 1, 0, 458613, 1, 0, 458614, 1, 0, 458615, 1, 0, 458616, 1, 0, 458617, 1, 0, 458618, 1, 0, 458619, 1, 0, 458620, 1, 0, 458621, 1, 0, 458622, 1, 0, 458623, 1, 0, 458624, 1, 0, 458625, 1, 0, 458626, 1, 0, 458627, 1, 0, 458628, 1, 0, 458629, 1, 0, 458630, 1, 0, 458631, 1, 0, 458632, 1, 0, 458633, 1, 0, 458634, 1, 0, 458635, 1, 0, 458636, 1, 0, 458637, 1, 0, 458638, 1, 0, 458639, 1, 0, 458640, 1, 0, 458641, 1, 0, 458642, 1, 0, 458643, 1, 0, 458644, 1, 0, 458645, 1, 0, 458646, 1, 0, 458647, 1, 0, 458648, 1, 0, 458649, 1, 0, 458650, 1, 0, 458651, 1, 0, 458652, 1, 0, 458653, 1, 0, 458654, 1, 0, 458655, 1, 0, 458656, 1, 0, 458657, 1, 0, 458658, 1, 0, 458659, 1, 0, 458660, 1, 0, 458661, 1, 0, 458662, 1, 0, 458663, 1, 0, 458664, 1, 0, 458665, 1, 0, 458666, 1, 0, 458667, 1, 0, 458668, 1, 0, 458669, 1, 0, 458670, 1, 0, 458671, 1, 0, 458672, 1, 0, 458673, 1, 0, 458674, 1, 0, 458675, 1, 0, 458676, 1, 0, 458677, 1, 0, 458678, 1, 0, 458679, 1, 0, 458680, 1, 0, 458681, 1, 0, 524069, 1, 0, 524070, 1, 0, 524071, 1, 0, 524072, 1, 0, 524073, 1, 0, 524074, 1, 0, 524075, 1, 0, 524076, 1, 0, 524077, 1, 0, 524078, 1, 0, 524079, 1, 0, 524080, 1, 0, 524081, 1, 0, 524082, 1, 0, 524083, 1, 0, 524084, 1, 0, 524085, 1, 0, 524086, 1, 0, 524087, 1, 0, 524088, 1, 0, 524089, 1, 0, 524090, 1, 0, 524091, 1, 0, 524092, 1, 0, 524093, 1, 0, 524094, 1, 0, 524095, 1, 0, 524096, 1, 0, 524097, 1, 0, 524098, 1, 0, 524099, 1, 0, 524100, 1, 0, 524101, 1, 0, 524102, 1, 0, 524103, 1, 0, 524104, 1, 0, 524105, 1, 0, 524106, 1, 0, 524107, 1, 0, 524108, 1, 0, 524109, 1, 0, 524110, 1, 0, 524111, 1, 0, 524112, 1, 0, 524113, 1, 0, 524114, 1, 0, 524115, 1, 0, 524116, 1, 0, 524117, 1, 0, 524118, 1, 0, 524119, 1, 0, 524120, 1, 0, 524121, 1, 0, 524122, 1, 0, 524123, 1, 0, 524124, 1, 0, 524125, 1, 0, 524126, 1, 0, 524127, 1, 0, 524128, 1, 0, 524129, 1, 0, 524130, 1, 0, 524131, 1, 0, 524132, 1, 0, 524133, 1, 0, 524134, 1, 0, 524135, 1, 0, 524136, 1, 0, 524137, 1, 0, 524138, 1, 0, 524139, 1, 0, 524140, 1, 0, 524141, 1, 0, 524142, 1, 0, 524143, 1, 0, 524144, 1, 0, 524145, 1, 0, 524146, 1, 0, 524147, 1, 0, 524148, 1, 0, 524149, 1, 0, 524150, 1, 0, 524151, 1, 0, 524152, 1, 0, 524153, 1, 0, 524154, 1, 0, 524155, 1, 0, 524156, 1, 0, 524157, 1, 0, 524158, 1, 0, 524159, 1, 0, 524160, 1, 0, 524161, 1, 0, 524162, 1, 0, 524163, 1, 0, 524164, 1, 0, 524165, 1, 0, 524166, 1, 0, 524167, 1, 0, 524168, 1, 0, 524169, 1, 0, 524170, 1, 0, 524171, 1, 0, 524172, 1, 0, 524173, 1, 0, 524174, 1, 0, 524175, 1, 0, 524176, 1, 0, 524177, 1, 0, 524178, 1, 0, 524179, 1, 0, 524180, 1, 0, 524181, 1, 0, 524182, 1, 0, 524183, 1, 0, 524184, 1, 0, 524185, 1, 0, 524186, 1, 0, 524187, 1, 0, 524188, 1, 0, 524189, 1, 0, 524190, 1, 0, 524191, 1, 0, 524192, 1, 0, 524193, 1, 0, 524194, 1, 0, 524195, 1, 0, 524196, 1, 0, 524197, 1, 0, 524198, 1, 0, 524199, 1, 0, 524200, 1, 0, 524201, 1, 0, 524202, 1, 0, 524203, 1, 0, 524204, 1, 0, 524205, 1, 0, 524206, 1, 0, 524207, 1, 0, 524208, 1, 0, 524209, 1, 0, 524210, 1, 0, 524211, 1, 0, 524212, 1, 0, 524213, 1, 0, 524214, 1, 0, 524215, 1, 0, 524216, 1, 0, 524217, 1, 0, 589605, 1, 0, 589606, 1, 0, 589607, 1, 0, 589608, 1, 0, 589609, 1, 0, 589610, 1, 0, 589611, 1, 0, 589612, 1, 0, 589613, 1, 0, 589614, 1, 0, 589615, 1, 0, 589616, 1, 0, 589617, 1, 0, 589618, 1, 0, 589619, 1, 0, 589620, 1, 0, 589621, 1, 0, 589622, 1, 0, 589623, 1, 0, 589624, 1, 0, 589625, 1, 0, 589626, 1, 0, 589627, 1, 0, 589628, 1, 0, 589629, 1, 0, 589630, 1, 0, 589631, 1, 0, 589632, 1, 0, 589633, 1, 0, 589634, 1, 0, 589635, 1, 0, 589636, 1, 0, 589637, 1, 0, 589638, 1, 0, 589639, 1, 0, 589640, 1, 0, 589641, 1, 0, 589642, 1, 0, 589643, 1, 0, 589644, 1, 0, 589645, 1, 0, 589646, 1, 0, 589647, 1, 0, 589648, 1, 0, 589649, 1, 0, 589650, 1, 0, 589651, 1, 0, 589652, 1, 0, 589653, 1, 0, 589654, 1, 0, 589655, 1, 0, 589656, 1, 0, 589657, 1, 0, 589658, 1, 0, 589659, 1, 0, 589660, 1, 0, 589661, 1, 0, 589662, 1, 0, 589663, 1, 0, 589664, 1, 0, 589665, 1, 0, 589666, 1, 0, 589667, 1, 0, 589668, 1, 0, 589669, 1, 0, 589670, 1, 0, 589671, 1, 0, 589672, 1, 0, 589673, 1, 0, 589674, 1, 0, 589675, 1, 0, 589676, 1, 0, 589677, 1, 0, 589678, 1, 0, 589679, 1, 0, 589680, 1, 0, 589681, 1, 0, 589682, 1, 0, 589683, 1, 0, 589684, 1, 0, 589685, 1, 0, 589686, 1, 0, 589687, 1, 0, 589688, 1, 0, 589689, 1, 0, 589690, 1, 0, 589691, 1, 0, 589692, 1, 0, 589693, 1, 0, 589694, 1, 0, 589695, 1, 0, 589696, 1, 0, 589697, 1, 0, 589698, 1, 0, 589699, 1, 0, 589700, 1, 0, 589701, 1, 0, 589702, 1, 0, 589703, 1, 0, 589704, 1, 0, 589705, 1, 0, 589706, 1, 0, 589707, 1, 0, 589708, 1, 0, 589709, 1, 0, 589710, 1, 0, 589711, 1, 0, 589712, 1, 0, 589713, 1, 0, 589714, 1, 0, 589715, 1, 0, 589716, 1, 0, 589717, 1, 0, 589718, 1, 0, 589719, 1, 0, 589720, 1, 0, 589721, 1, 0, 589722, 1, 0, 589723, 1, 0, 589724, 1, 0, 589725, 1, 0, 589726, 1, 0, 589727, 1, 0, 589728, 1, 0, 589729, 1, 0, 589730, 1, 0, 589731, 1, 0, 589732, 1, 0, 589733, 1, 0, 589734, 1, 0, 589735, 1, 0, 589736, 1, 0, 589737, 1, 0, 589738, 1, 0, 589739, 1, 0, 589740, 1, 0, 589741, 1, 0, 589742, 1, 0, 589743, 1, 0, 589744, 1, 0, 589745, 1, 0, 589746, 1, 0, 589747, 1, 0, 589748, 1, 0, 589749, 1, 0, 589750, 1, 0, 589751, 1, 0, 589752, 1, 0, 589753, 1, 0, 655141, 1, 0, 655142, 1, 0, 655143, 1, 0, 655144, 1, 0, 655145, 1, 0, 655146, 1, 0, 655147, 1, 0, 655148, 1, 0, 655149, 1, 0, 655150, 1, 0, 655151, 1, 0, 655152, 1, 0, 655153, 1, 0, 655154, 1, 0, 655155, 1, 0, 655156, 1, 0, 655157, 1, 0, 655158, 1, 0, 655159, 1, 0, 655160, 1, 0, 655161, 1, 0, 655162, 1, 0, 655163, 1, 0, 655164, 1, 0, 655165, 1, 0, 655166, 1, 0, 655167, 1, 0, 655168, 1, 0, 655169, 1, 0, 655170, 1, 0, 655171, 1, 0, 655172, 1, 0, 655173, 1, 0, 655174, 1, 0, 655175, 1, 0, 655176, 1, 0, 655177, 1, 0, 655178, 1, 0, 655179, 1, 0, 655180, 1, 0, 655181, 1, 0, 655182, 1, 0, 655183, 1, 0, 655184, 1, 0, 655185, 1, 0, 655186, 1, 0, 655187, 1, 0, 655188, 1, 0, 655189, 1, 0, 655190, 1, 0, 655191, 1, 0, 655192, 1, 0, 655193, 1, 0, 655194, 1, 0, 655195, 1, 0, 655196, 1, 0, 655197, 1, 0, 655198, 1, 0, 655199, 1, 0, 655200, 1, 0, 655201, 1, 0, 655202, 1, 0, 655203, 1, 0, 655204, 1, 0, 655205, 1, 0, 655206, 1, 0, 655207, 1, 0, 655208, 1, 0, 655209, 1, 0, 655210, 1, 0, 655211, 1, 0, 655212, 1, 0, 655213, 1, 0, 655214, 1, 0, 655215, 1, 0, 655216, 1, 0, 655217, 1, 0, 655218, 1, 0, 655219, 1, 0, 655220, 1, 0, 655221, 1, 0, 655222, 1, 0, 655223, 1, 0, 655224, 1, 0, 655225, 1, 0, 655226, 1, 0, 655227, 1, 0, 655228, 1, 0, 655229, 1, 0, 655230, 1, 0, 655231, 1, 0, 655232, 1, 0, 655233, 1, 0, 655234, 1, 0, 655235, 1, 0, 655236, 1, 0, 655237, 1, 0, 655238, 1, 0, 655239, 1, 0, 655240, 1, 0, 655241, 1, 0, 655242, 1, 0, 655243, 1, 0, 655244, 1, 0, 655245, 1, 0, 655246, 1, 0, 655247, 1, 0, 655248, 1, 0, 655249, 1, 0, 655250, 1, 0, 655251, 1, 0, 655252, 1, 0, 655253, 1, 0, 655254, 1, 0, 655255, 1, 0, 655256, 1, 0, 655257, 1, 0, 655258, 1, 0, 655259, 1, 0, 655260, 1, 0, 655261, 1, 0, 655262, 1, 0, 655263, 1, 0, 655264, 1, 0, 655265, 1, 0, 655266, 1, 0, 655267, 1, 0, 655268, 1, 0, 655269, 1, 0, 655270, 1, 0, 655271, 1, 0, 655272, 1, 0, 655273, 1, 0, 655274, 1, 0, 655275, 1, 0, 655276, 1, 0, 655277, 1, 0, 655278, 1, 0, 655279, 1, 0, 655280, 1, 0, 655281, 1, 0, 655282, 1, 0, 655283, 1, 0, 655284, 1, 0, 655285, 1, 0, 655286, 1, 0, 655287, 1, 0, 655288, 1, 0, 655289, 1, 0 )
-[connection signal="animation_finished" from="Player/Player" to="Player" method="_on_Player_animation_finished"]
-[connection signal="area_entered" from="Skeleton/Hitbox" to="Skeleton" method="_on_Hitbox_area_entered"]
-[connection signal="animation_finished" from="Skeleton/Skeleton" to="Skeleton" method="_on_Skeleton_animation_finished"]
